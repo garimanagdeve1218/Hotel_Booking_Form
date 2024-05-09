@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Booking Registration Form</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>HOTEL BOOKING REGISTRATION FORM</h1>
+        <form id="bookingForm">
+            <!--Customer Details-->
+            <h2>CUSTOMER DETAILS</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="check-in">Check-in-Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="no of days">Total No of Days:</label>
+            <input type="number" id="no of days" name="no of days" min="0" step="1"required>
+
+            <label for="persons">Total Number of Persons:</label>
+            <input type="number" id="persons" name="persons" min="0" step="1" required>
+
+            <!--Room Information-->
+            <h2>ROOM INFORMATION</h2>
+            <label for="roomType">Room Type:</label>
+            <select id="room type" name="room type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for="Amenities">Amenities:</label>
+            <select id="Amenities" name="Amenities">
+                <option value="AC">AC</option>
+                <option value="locker">locker</option>
+                <option value="None">None</option>
+            </select>
+
+            <!--Room Rates-->
+            <h2>ROOM RATES</h2>
+            <label for="RoomRate">Room Rate:</label>
+            <select id="RoomRate" name="RoomRate">
+                <option value="Dulex">Dulex Room--Rs.2500</option>
+                <option value="Suite">Suite Room--Rs.4000</option>
+                <option value="AC">AC--Rs.1000</option>
+                <option value="Locker">Locker--Rs.300</option>
+            </select>
+            <!--Advance Payment-->
+            <h2>ADVANCE PAYMENT</h2>
+            <label for="advancePayment">Amount:</label>
+            <input type="number" id="advancePayment" name="advancePayment" min="0" step="1" required>
+
+            <!--Balance Payment-->
+            <h2>BALANCE PAYMENT</h2>
+            <label for="balancePayment">Amount:</label>
+            <input type="number" id="balancePayment" name="balancePayment" min="0" step="1" required>
+
+            <!--Total Cost Calculation-->
+            <h2>TOTAL COST CALCULATION</h2>
+            <label for="totalCost">Amount:</label>
+            <input type="number" id="totalCost" name="totalCost" min="0" step="1" required>
+            
+            <!--Additional Charges-->
+            <h2>ADDITIONAL CHARGES</h2>
+            <label for="numberOfPeople">Number of People:</label>
+            <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" step="1" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Now</button>
+
+            
+
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
